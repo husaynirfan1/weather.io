@@ -2,10 +2,13 @@ const apiKey = "8d9594679432c1dbaf091acd9a3f139e"; // Replace with your One Call
 const geocodingApiKey = "8d9594679432c1dbaf091acd9a3f139e"; // Replace with your Geocoding API key
 const cityInput = document.getElementById("cityInput");
 const weatherContainer = document.querySelector(".weather-container");
-const cityElement = document.getElementById("city");
+const   
+ cityElement = document.getElementById("city");
 const temperatureElement = document.getElementById("temperature");
-const descriptionElement = document.getElementById("description");
-const weatherIconElement = document.getElementById("weather-icon");
+const descriptionElement = document.getElementById("description");   
+
+const weatherIconElement = document.getElementById("weather-icon");   
+
 
 function showLoading() {
   temperatureElement.textContent = "Loading...";
@@ -44,8 +47,10 @@ function getWeatherDataByCity(city) {
           // Update UI with weather data
           cityElement.textContent = data.name;
           temperatureElement.textContent = `${data.main.temp} °C`;
-          descriptionElement.textContent = data.weather[0].description;
-          weatherIconElement.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          descriptionElement.textContent = data.weather[0].description;   
+
+          weatherIconElement.src   
+ = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         })
         .catch(error => showError(error));
     })
