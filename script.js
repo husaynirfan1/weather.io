@@ -10,7 +10,7 @@ const weatherIconElement = document.getElementById("weather-icon");  
 
 
 function getWeatherData(city) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;   
+    const apiUrl = `https://api.openweathermap.org/data/3.0/weather?q=${city}&appid=${apiKey}&units=metric`;   
 
 
     fetch(apiUrl)
