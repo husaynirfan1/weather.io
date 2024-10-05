@@ -1,0 +1,9 @@
+.weather-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
